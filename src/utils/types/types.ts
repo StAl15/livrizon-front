@@ -21,7 +21,19 @@ export type KnowledgeType = {
     desc: string;
     link: string;
 }
-
+export type MemberType = {
+    img: string;
+    name: string;
+    bio: string;
+    role: roleType;
+    employee: string;
+    link?: string;
+}
+export enum roleType {
+    admin='admin',
+    user='user',
+    mentor='mentor'
+}
 export enum modeAcces {
     edit='edit',
     watch='watch',
@@ -29,6 +41,7 @@ export enum modeAcces {
 }
 
 export type KnowledgeDetailType = {
+    header: string;
     text:string;
     contacts?: string;
     media?: string[],

@@ -6,8 +6,6 @@ type Props = {
     card: KnowledgeType;
 }
 
-
-
 export const KnowledgeItem: React.FC<Props> = ({card}) => {
     return (
         <>
