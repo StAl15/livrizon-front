@@ -47,3 +47,9 @@ export type KnowledgeDetailType = {
     media?: string[],
     cover?: string
 }
+
+export type AchievementType = {
+    name: string,
+    coins: number,
+    status?: boolean
+}
