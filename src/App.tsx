@@ -7,6 +7,7 @@ import {KnowledgeItem} from "./views/Knowledge/KnowledgeItem/KnowledgeItem";
 import {modeAcces} from "./utils/types/types";
 import {Team} from "./views/Team/TeamLayout/Team";
 import {AddMember} from "./views/Team/AddMember/AddMember";
+import { AchievementLayout } from './components/layouts/Achievements/AchievementLayout';
 
 function App() {
     return (
@@ -25,7 +26,7 @@ function App() {
                     <Route path={'/team/add'} element={<AddMember/>}/>
                     <Route path={'/team/member-detail/:id'} element={<LoginPage/>}/>
                     <Route path={'/team/member-detail/:id/edit'} element={<LoginPage/>}/>
-                    <Route path={'/achievements'} element={<LoginPage/>}/>
+                    <Route path={'/achievements'} element={<AchievementLayout/>}/>
                     <Route path={'/achievements/add'} element={<LoginPage/>}/>
 
                     <Route path="/*" element={<Navigate to="/login" replace/>}/>
