@@ -21,3 +21,16 @@ export type KnowledgeType = {
     desc: string;
     link: string;
 }
+
+export enum modeAcces {
+    edit='edit',
+    watch='watch',
+    create='create'
+}
+
+export type KnowledgeDetailType = {
+    text:string;
+    contacts?: string;
+    media?: string[],
+    cover?: string
+}

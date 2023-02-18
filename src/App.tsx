@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
-import {HelloPage} from "./views/SignIn/HelloPage/HelloPage";
 import {LoginPage} from "./views/SignIn/Login/LoginPage";
-import {CreateAccount} from "./views/SignIn/CreateAccount/CreateAccount";
-import {PostDetail} from "./views/Post/PostDetail";
 import {KnowledgeLayout} from "./views/Knowledge/KnowledgeLayout/KnowledgeLayout";
+import {KnowledgeItem} from "./views/Knowledge/KnowledgeItem/KnowledgeItem";
+import {modeAcces} from "./utils/types/types";
 
 function App() {
     return (
@@ -17,8 +16,9 @@ function App() {
                     {/*<Route path={'/post-detail/:id'} element={<PostDetail/>}/>*/}
                     <Route path={'/login'} element={<LoginPage/>}/>
                     <Route path={'/knowledge'} element={<KnowledgeLayout />}/>
-                    <Route path={'/knowledge/:id'} element={<LoginPage/>}/>
-                    <Route path={'/knowledge/:id/edit'} element={<LoginPage/>}/>
+                    <Route path={'/knowledge/create'} element={<KnowledgeItem mode={modeAcces.create}/>}/>
+                    <Route path={'/knowledge/:id'} element={<KnowledgeItem mode={modeAcces.watch}/>}/>
+                    <Route path={'/knowledge/:id/edit'} element={<KnowledgeItem mode={modeAcces.edit}/>}/>
                     <Route path={'/team'} element={<LoginPage/>}/>
                     <Route path={'/team/add'} element={<LoginPage/>}/>
                     <Route path={'/team/member-detail/:id'} element={<LoginPage/>}/>
