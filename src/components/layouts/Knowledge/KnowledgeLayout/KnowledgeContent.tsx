@@ -8,7 +8,7 @@ type Props = {
 export const KnowledgeContent: React.FC<Props> = ({cards}) => {
     return (
         <>
-            <div className={'flex w-auto h-auto ml-10'}>
+            <div className={'flex flex-wrap w-auto h-auto ml-10'}>
                 {cards.map((item, idx) =>
                     <KnowledgeItem key={idx} card={item}/>
                 )}
