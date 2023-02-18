@@ -9,17 +9,17 @@ type Props = {
 
 export const AchievementItem: React.FC<Props> = ({ card }) => {
   
-let status = card.status;
+
 
   return (
     
     <>
-      <div className="group/achievementItem flex row max-w-[980px] w-full bg-white p-12 rounded-[30px] mb-5 items-center">
+      <div className="group/achievementItem flex row max-w-[980px] w-full bg-white p-6 rounded-[30px] mb-5 items-center">
         <h2 className="font-montserratRegular text-xl mr-auto">{card.name}</h2>
         <span className="font-montserratRegular text-xl mr-10">
           {card.coins} баллов
         </span>
-        {status && <button
+        <button
           className={
             "font-montserratRegular rounded-2xl text-white transition-all duration-300 mr-2"
           }
@@ -37,7 +37,7 @@ let status = card.status;
               fill="black"
             />
           </svg>
-        </button>}
+        </button>
         <button
           className={
             "hidden group-hover/achievementItem:block font-montserratRegular rounded-2xl text-white transition-all duration-300"
