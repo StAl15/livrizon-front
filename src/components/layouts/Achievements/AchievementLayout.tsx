@@ -36,9 +36,9 @@ export const AchievementLayout: React.FC<{  }> = props => {
     return (
         <>
        <MainLayout>
-       <div className={'ml-32 mb-5 bg-secondary w-screen h-full min-h-screen'}>
-            <div className={'flex pt-20  justify-between mb-5 ml-10 mr-10 items-center'}>
-                <h2 className="font-montserratBold text-3xl">Ваши достижения</h2>
+       <div className={'ml-32 pb-5 bg-secondary w-screen h-full min-h-screen'}>
+            <div className={'flex pt-20  justify-between ml-10 mr-10 items-center'}>
+                <h2 className="font-montserratBold text-3xl mb-5">Ваши достижения</h2>
                 <h2 className="font-montserratRegular text-xl">Баланс{}</h2>
                 </div>
 

@@ -9,7 +9,7 @@ export const Team: React.FC<{}> = props => {
 
     const cards_ = [
         {
-            img: 'https://begeton.com/files/users-persons_thumb/121/5/30/stGHlM7lakOOgET27IANp6AOQPwaV0j8.jpeg',
+            img_: 'https://begeton.com/files/users-persons_thumb/121/5/30/stGHlM7lakOOgET27IANp6AOQPwaV0j8.jpeg',
             name: 'Alex',
             bio: 'База знаний для бека',
             role: roleType.user,
@@ -17,7 +17,7 @@ export const Team: React.FC<{}> = props => {
             link: '1'
         },
         {
-            img: 'https://www.belarosso.ru/imgc/2022/106b/319920/futbolka-infinity-31200510007-belyy-4.jpg',
+            img_: 'https://www.belarosso.ru/imgc/2022/106b/319920/futbolka-infinity-31200510007-belyy-4.jpg',
             name: 'Gordon',
             bio: 'База знаний для frontend',
             role: roleType.mentor,
@@ -25,16 +25,15 @@ export const Team: React.FC<{}> = props => {
             link: '2'
         },
         {
-            img: 'https://a.lmcdn.ru/pi/img600x866/M/P/MP002XW04SZK_13074051_5_v1.jpeg',
+            img_: 'https://a.lmcdn.ru/pi/img600x866/M/P/MP002XW04SZK_13074051_5_v1.jpeg',
             name: 'Luice',
             bio: 'База знаний для mobile',
             role: roleType.admin,
             employee: 'Frontend',
             link: '3'
         }
-
-
     ]
+
     return (
         <>
             <MainLayout>

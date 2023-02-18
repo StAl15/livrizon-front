@@ -21,7 +21,6 @@ export const MainLayout: React.FC<Props> = ({children}) => {
                     </button>
                     <img onClick={() => navigate('/knowledge')} className={'w-8 h-8 mb-7'} src={categ}/>
                     <img onClick={() => navigate('/team')} className={'w-8 h-8 mb-7'} src={team}/>
-                    <img className={'w-8 h-8 mb-7'} src={info}/>
                 </div>
 
             </div>

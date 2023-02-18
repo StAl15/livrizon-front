@@ -22,12 +22,17 @@ export type KnowledgeType = {
     link: string;
 }
 export type MemberType = {
-    img: string;
+    img_: string;
     name: string;
     bio: string;
     role: roleType;
     employee: string;
     link?: string;
+    phone?:string;
+    email?:string;
+    vk?:string;
+    facebook?:string;
+    insta?:string;
 }
 export enum roleType {
     admin='admin',
@@ -45,7 +50,8 @@ export type KnowledgeDetailType = {
     text:string;
     contacts?: string;
     media?: string[],
-    cover?: string
+    cover?: string,
+    link?: string
 }
 
 export type AchievementType = {

@@ -1,15 +1,17 @@
 import {KnowledgeType} from "../../../../utils/types/types";
 import styles from './KnowledgeItem.module.scss'
 import more from '../../../../assets/icons/Post/more-horizontal.svg'
+import {useNavigate} from "react-router-dom";
 
 type Props = {
     card: KnowledgeType;
 }
 
 export const KnowledgeItem: React.FC<Props> = ({card}) => {
+    const navigate = useNavigate()
     return (
         <>
-            <div className={'group/knowledgeItem bg-white rounded-2xl w-56 h-auto p-5 grid justify-items-center my-auto mr-5 hover:shadow-2xl transition-all duration-1000'}>
+            <div onClick={() => navigate(`/knowledge/${card.link}`)} className={'group/knowledgeItem bg-white rounded-2xl w-56 h-auto p-5 grid justify-items-center my-auto mr-5 hover:shadow-2xl transition-all duration-1000'}>
 
                 <img className={'rounded-full w-32 h-32 mb-5'} src={card.img}/>
                 <h3 className={'font-montserratSemibold text-black text-xl mb-5'}>{card.label}</h3>

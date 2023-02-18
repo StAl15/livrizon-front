@@ -7,6 +7,7 @@ import {KnowledgeItem} from "./views/Knowledge/KnowledgeItem/KnowledgeItem";
 import {modeAcces} from "./utils/types/types";
 import {Team} from "./views/Team/TeamLayout/Team";
 import {AddMember} from "./views/Team/AddMember/AddMember";
+import {MemberDetail} from "./views/Team/MemberDetail/MemberDetail";
 import { AchievementLayout } from './components/layouts/Achievements/AchievementLayout';
 
 function App() {
@@ -24,8 +25,8 @@ function App() {
                     <Route path={'/knowledge/:id/edit'} element={<KnowledgeItem mode={modeAcces.edit}/>}/>
                     <Route path={'/team'} element={<Team/>}/>
                     <Route path={'/team/add'} element={<AddMember/>}/>
-                    <Route path={'/team/member-detail/:id'} element={<LoginPage/>}/>
-                    <Route path={'/team/member-detail/:id/edit'} element={<LoginPage/>}/>
+                    <Route path={'/team/member-detail/:id'} element={<MemberDetail mode={modeAcces.watch}/>}/>
+                    <Route path={'/team/member-detail/:id/edit'} element={<MemberDetail mode={modeAcces.edit}/>}/>
                     <Route path={'/achievements'} element={<AchievementLayout/>}/>
                     <Route path={'/achievements/add'} element={<LoginPage/>}/>
 

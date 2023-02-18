@@ -1,4 +1,4 @@
-export const KnowledgeItemMedia: React.FC<{ media?: string[], cover?: string, editable?: boolean }> = props => {
+export const KnowledgeItemMedia: React.FC<{ media?: string[], cover?: string, editable: boolean }> = ({media, cover, editable}) => {
     return (
         <>
             <div className={'flex mt-5'}>
@@ -8,7 +8,8 @@ export const KnowledgeItemMedia: React.FC<{ media?: string[], cover?: string, ed
                     </label>
                     <br/>
                     <input
-                        className={'mt-3 cursor-pointer placeholder-black w-auto text-sm font-montserratRegular'}
+                        disabled={!editable}
+                        className={'mt-3 cursor-pointer bg-white placeholder-black w-auto text-sm font-montserratRegular'}
                         type="file"
                         id={'media'}
                         multiple={true}
@@ -23,7 +24,8 @@ export const KnowledgeItemMedia: React.FC<{ media?: string[], cover?: string, ed
                     </label>
                     <br/>
                     <input
-                        className={'mt-3 cursor-pointer placeholder-black w-auto text-sm font-montserratRegular'}
+                        disabled={!editable}
+                        className={'mt-3 cursor-pointer bg-white placeholder-black w-auto text-sm font-montserratRegular'}
                         type="file"
                         id={'media'}
                         multiple={false}
