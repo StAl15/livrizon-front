@@ -41,6 +41,9 @@ sanity start
 sanity manage //for detail info
 ```
   
+## Презентация
+https://www.figma.com/file/6iG7AF2jKcsHGA41F6Q7ns/Livrizon?node-id=2595%3A242&t=PKMQXdwerI77sxeP-1
+  
   
 ## Демонстрация
 
