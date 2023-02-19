@@ -37,7 +37,7 @@ export const KnowledgeLayout: React.FC<{}> = props => {
                         <h3 className={'font-montserratBold text-3xl'}>База знаний</h3>
                         <button
                             onClick={() => navigate('/knowledge/create')}
-                            className={'w-48 font-montserratRegular px-5 py-3 rounded-2xl hover:bg-white bg-black ml-auto hover:text-black transition-all duration-300 text-white'}>Создать
+                            className={'w-48 font-montserratRegular px-5 py-3 rounded-2xl hover:bg-white bg-black ml-auto hover:text-black transition-all duration-300 text-white hidden'}>Создать
                         </button>
                     </div>
 

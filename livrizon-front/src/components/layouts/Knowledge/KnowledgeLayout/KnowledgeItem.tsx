@@ -20,8 +20,7 @@ export const KnowledgeItem: React.FC<Props> = ({card, idx}) => {
                 <img src={img_} className={'rounded-full w-32 h-32 mb-5'} />
                 <h3 className={'font-montserratSemibold text-black text-xl mb-5'}>{card.title}</h3>
                 <p className={'font-montserratRegular text-text-sec text-center text-sm mb-5'}>{card.text}</p>
-                <button className={'w-full px-5 py-3 font-montserratRegular bg-secondary rounded-2xl text-black'}>Изменить</button>
-                <button className={'mt-3 w-full px-5 py-3 hidden group-hover/knowledgeItem:block font-montserratRegular bg-red-500 rounded-2xl text-white transition-all duration-300'}>Удалить</button>
+                <button className={'w-full px-5 py-3 font-montserratRegular bg-secondary rounded-2xl text-black'}>Открыть</button>
             </div>
         </>
     );

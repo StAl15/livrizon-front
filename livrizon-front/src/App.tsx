@@ -18,7 +18,6 @@ function App() {
                     {/*<Route path={'/hello'} element={<HelloPage/>}/>*/}
                     {/*<Route path={'/create'} element={<CreateAccount/>}/>*/}
                     {/*<Route path={'/post-detail/:id'} element={<PostDetail/>}/>*/}
-                    <Route path={'/login'} element={<LoginPage/>}/>
                     <Route path={'/knowledge'} element={<KnowledgeLayout/>}/>
                     <Route path={'/knowledge/create'} element={<KnowledgeItem mode={modeAcces.create}/>}/>
                     <Route path={'/knowledge/:id'} element={<KnowledgeItem mode={modeAcces.watch}/>}/>
@@ -29,8 +28,8 @@ function App() {
                     <Route path={'/team/member-detail/:id/edit'} element={<MemberDetail mode={modeAcces.edit}/>}/>
                     <Route path={'/achievements'} element={<AchievementLayout/>}/>
                     <Route path={'/achievements/add'} element={<LoginPage/>}/>
-
-                    <Route path="/*" element={<Navigate to="/login" replace/>}/>
+                    <Route path={'/login'} element={<LoginPage/>}/>
+                    <Route path="/*" element={<Navigate to="/knowledge" replace/>}/>
                 </Routes>
             </div>
         </BrowserRouter>
